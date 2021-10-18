@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE-edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, intial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>TEAM M11 ESPORTS</title>
+        <meta name="Author" content="FrontEnd Tricks"/>
+
+        <link rel="stylesheet" href="CSS/style1.css"
+
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+
+        <!-- Jquery Countdown -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+
+    </head>
+    <body>
+        <div class="counter-section">
+        <div class="header">
+        <h1 class="text-center pb-2 spacingtop-6 fw-bold font-poppins fs-sm-1 size-sm-h1 text-gradient"><br>Coming Soon
+        </h1>
+        <div class="counter" id="init_clock">
+        <p class="text-center font-poppins">Under Construction.</p>
+        </div>
+    </div>
+</div>
+        <script>
+            $('#init_clock').countdown('2022/02/01', function(event) {
+                var $this = $(this).html(event.strftime (''
+                + '<div><span class="days">%D</span></div>'
+                + '<div><span class="hours">%H</span></div>'
+                + '<div><span class="minutes">%M</span></div>'
+                + '<div><span class="seconds">%S</span></div>'));
+            });
+        </script>
+    </body>
+</html>
